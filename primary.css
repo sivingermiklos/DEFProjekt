@@ -1,10 +1,3 @@
-*{
-    font-family: "CustomFont";
-    src: url("fonts/VIOLA.otf");
-}
-.container{
-  display:block;
-}
 .bg-img {
     height: 93vh;
     background-image: url('img/bg.jpg');
@@ -17,13 +10,12 @@
     height: 80vh;
     display:flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     transform: translate(-50%, -50%);
     top: 45%;
     left: 50%;
     z-index: 2;
-}
-.mainText {
-    padding-top: 10px;
 }
 .navbarPrimary {
     background-color: #87CEFA;
