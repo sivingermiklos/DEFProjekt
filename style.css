@@ -2,8 +2,11 @@
     font-family: "CustomFont";
     src: url("fonts/VIOLA.otf");
 }
+.container{
+  display:block;
+}
 .bg-img {
-    height: 80vh;
+    height: 93vh;
     background-image: url('img/bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -14,8 +17,6 @@
     height: 80vh;
     display:flex;
     position: absolute;
-    align-items:center;
-    justify-content: center;
     transform: translate(-50%, -50%);
     top: 45%;
     left: 50%;
