@@ -1,8 +1,9 @@
-*{
-    font-family: "CustomFont";
-    src: url("fonts/VIOLA.otf");
+@font-face {
+  font-family: customFont;
+  src: url(fonts/VIOLA.otf);
 }
-.container{
+
+.container {
   display:block;
 }
 
@@ -13,10 +14,11 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
 .szoveg_kozepen {
   font-size: 30px;
-  padding-top: 40px;
 }
+
 .navbarPrimary {
     background-color: #87CEFA;
 }
@@ -50,20 +52,21 @@ body {
       opacity: 1;
     }
   }
+
 .slide-top {
     -webkit-animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
  }
  @-webkit-keyframes slide-top {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
     -webkit-opacity:   0%;
             opacity:   0%;
   }
   100% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     -webkit-opacity:   100%;
             opacity:   100%;
   }
@@ -71,14 +74,14 @@ body {
 
 @keyframes slide-top {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
     -webkit-opacity:   0%;
             opacity:   0%;
   }
   100% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     -webkit-opacity:   100%;
             opacity:   100%;
   }
@@ -86,13 +89,16 @@ body {
 
 .cim{
   padding-top: 10px;
-  font-size: 100px;
+  font-size: 90px;
   text-shadow: 3px 5px 2px #474747;
 }
+
+
 /*Szöveg írás effekt*/
+
 .typewriter {
   overflow: hidden;
-  border-right: .15em solid orange;
+  border-right: .10em solid black;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
@@ -100,19 +106,25 @@ body {
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
+
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
+
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  50% { border-color: black; }
 }
+
+
 /*Szöveg megjelenés*/
+
 .text-focus-in {
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -125,6 +137,7 @@ body {
     opacity: 1;
   }
 }
+
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);

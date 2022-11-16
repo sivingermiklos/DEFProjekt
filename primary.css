@@ -1,6 +1,6 @@
-*{
-  font-family: "CustomFont";
-  src: url("fonts/VIOLA.otf");
+@font-face {
+  font-family: customFont;
+  src: url(fonts/VIOLA.otf);
 }
 
 body {
@@ -32,6 +32,7 @@ body {
       opacity: 1;
     }
   }
+  
   @keyframes tracking-in-expand {
     0% {
       letter-spacing: -0.5em;
@@ -46,6 +47,7 @@ body {
   }
 
 .cim{
-  font-size: 100px;
+  padding-top: 10px;
+  font-size: 90px;
   text-shadow: 3px 5px 2px #474747;
 }
