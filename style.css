@@ -5,33 +5,24 @@
 .container{
   display:block;
 }
-.bg-img {
-    height: 93vh;
+
+body {
     background-image: url('img/bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(5px);
+    background-attachment: fixed;
 }
-.bg-text {
-    height: 80vh;
-    display:flex;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 45%;
-    left: 50%;
-    z-index: 2;
-}
-.mainText {
-    padding-top: 10px;
-}
+
 .navbarPrimary {
     background-color: #87CEFA;
 }
+
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 } 
+
 @-webkit-keyframes tracking-in-expand {
     0% {
       letter-spacing: -0.5em;
@@ -56,27 +47,43 @@
       opacity: 1;
     }
   }
+
 .slide-top {
-    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
  }
  @-webkit-keyframes slide-top {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-opacity:   0%;
+            opacity:   0%;
   }
   100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    -webkit-opacity:   100%;
+            opacity:   100%;
   }
 }
+
 @keyframes slide-top {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-opacity:   0%;
+            opacity:   0%;
   }
   100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    -webkit-opacity:   100%;
+            opacity:   100%;
   }
+}
+
+.cim{
+  padding-top: 10px;
+  font-size: 100px;
+  text-shadow: 3px 5px 2px #474747;
 }
